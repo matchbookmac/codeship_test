@@ -6,5 +6,9 @@ describe Boop do
     it 'should say boop' do
       expect(Boop.say).to eq 'boop'
     end
+
+    it 'should say beep as instance' do
+      expect(Boop.new.say).to eq 'beep'
+    end
   end
 end
